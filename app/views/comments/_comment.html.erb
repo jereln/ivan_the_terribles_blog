@@ -2,6 +2,8 @@
   <h3>Comment <%= comment.id %>:</h3>
   <p><%= comment.body %></p>
   <div class="reply">
-    <%= render comment.replies %>
+    <% cache comment do %>
+      <%= render comment.replies %>
+    <% end %>
   </div>
 </div>

@@ -4,4 +4,13 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-IvanTheTerriblesBlog::Application.load_tasks
+Rails.application.load_tasks
+
+require 'rake/testtask'
+
+Rake::TestTask.new do |task|
+  task.libs << 'test'
+  task.pattern = 'test/**/*_test.rb'
+end
+
+task default: 'test'

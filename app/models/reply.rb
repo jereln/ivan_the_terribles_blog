@@ -1,4 +1,4 @@
 class Reply < ActiveRecord::Base
-  attr_accessible :comment, :body
+  attr_accessor :comment, :body
   belongs_to :comment
 end

@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
   # GET /comments
   # GET /comments.json
   def index
-    @comments = Comment.all
+    @comments = Comment.eager_load(:replies).all
 
     respond_to do |format|
       format.html # index.html.erb
