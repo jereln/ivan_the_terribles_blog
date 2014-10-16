@@ -1,9 +1,16 @@
-# My New Blog!
+#Fixing Ivan's crappy blog
 
-I've got a lot to say, and now I have a place to say it!!!!!
+##Approach
+This is what I did:  
+-Upgraded to Rails 4.1
+-Eager loading
+-Russian Doll caching
+-Add index to columns
+-gzip
+-Unicorn Server
 
-Read all my amazing posts!!!!! You can load them into the app with: `rake load:blog`
-
-Since I know you want to read them all, I designed my page to show EVERYTHING on the front page of the site!!!!!
-
-I know it is a little slow (but totes worth it!!!!)... _Do you know how I can make it faster?_
+##Resources
+http://api.rubyonrails.org/classes/ActiveSupport/Gzip.html  
+http://guides.rubyonrails.org/active_record_querying.html  
+https://devcenter.heroku.com/articles/rails-unicorn  
+http://railscasts.com/episodes/387-cache-digests
