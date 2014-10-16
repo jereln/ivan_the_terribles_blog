@@ -1,13 +1,24 @@
 #Fixing Ivan's crappy blog
 
 ##Approach
-This is what I did:  
--Upgraded to Rails 4.1
--Eager loading
--Russian Doll caching
--Add index to columns
--gzip
--Unicorn Server
+This is what I did: 
+-Upgraded to Rails 4.1 
+-Eager loading 
+-Russian Doll caching 
+-Add index to columns 
+-gzip 
+-Unicorn Server 
+
+##Load Impact
+
+Requests: 718 
+Test min: 4.17s 
+Test max: 18.90s 
+Test avg: 11.54s = 11,535ms 
+Resources: 20100(?) 
+http://loadimpact.com/load-test/ivan-the-terribles-blog.herokuapp.com-0c6993d90f047690064933e0a11c79e3
+
+![Screenshot](https://dl.dropbox.com/s/ue1pgcop2g7bdlv/Screen%20Shot%202014-10-15%20at%2011.08.05%20PM.png?dl=0)
 
 ##Resources
 http://api.rubyonrails.org/classes/ActiveSupport/Gzip.html  
