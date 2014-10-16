@@ -6,6 +6,7 @@ gem 'jquery-rails'
 gem 'faker'
 gem 'newrelic_rpm'
 gem 'lol_dba'
+gem 'unicorn'
 
 group :assets do
   gem 'sass-rails'
