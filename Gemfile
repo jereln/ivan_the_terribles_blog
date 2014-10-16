@@ -5,6 +5,7 @@ gem 'pg'
 gem 'jquery-rails'
 gem 'faker'
 gem 'newrelic_rpm'
+gem 'lol_dba'
 
 group :assets do
   gem 'sass-rails'
