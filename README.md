@@ -27,3 +27,6 @@ SQL Injection:
 ```
 foo%'); INSERT INTO posts (id,title,body,created_at,updated_at) VALUES (99,'hacked','hacked alright','2013-07-18','2013-07-18'); SELECT "posts".* FROM "posts" WHERE (title like 'hacked%
 ```
+
+##Fixes
+I paramaterized the seach field to prevent SQL injection. I also escaped the search form partial to prevent XXS.
